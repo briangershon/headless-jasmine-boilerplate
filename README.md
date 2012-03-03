@@ -11,7 +11,11 @@ This is a starting place for those wanting to run headless Jasmine tests locally
     
     # run tests via
     rake
-  
+
+# Are we running ok on Travis CI?
+
+[![Build Status](https://secure.travis-ci.org/briangershon/headless-jasmine-boilerplate.png)](http://travis-ci.org/briangershon/headless-jasmine-boilerplate)
+
 # Useful and Inspirational Resources
 
 * [Writing a CoffeeScript web application using TDD](http://watirmelon.com/2012/01/23/writing-a-coffeescript-web-application-using-tdd/)
