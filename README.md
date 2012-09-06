@@ -4,25 +4,42 @@ This is a starting place for those wanting to learn how to run headless Jasmine 
 
 Once you're familiar with how it works, it should be easy to add to your own projects.
 
-Project demonstates:
+Project includes:
 
-* setting up Jasmine gem
+* how to setup Jasmine gem
 
-* adding a sample Jasmine layout, created via `jasmine init`
+* sample Jasmine layout, created via `jasmine init`
 
-* tweaking Rakefile to use 'jasmine:ci' task by default
+* tweak of Rakefile to use 'jasmine:ci' task by default (for Travis and other CI systems)
 
-* adding Travis CI integration via .travis.yml -- see [Travis CI Getting Started](http://about.travis-ci.org/docs/user/getting-started/)
+* Travis CI integration via .travis.yml -- see [Travis CI Getting Started](http://about.travis-ci.org/docs/user/getting-started/)
 
 # To see it in action
 
-    # clone this repository
+1. Clone this repository
     
-    # install dependencies using bundler (run 'gem install bundler' if you don't have bundler)
-    bundle install
+2. Ruby should already be installed on your system. Or install via Homebrew (on OSX). Or use Ruby Version Manager (https://rvm.io) if you want to isolate these Ruby dependencies.
+
+3. Make sure you're in the root of the repository (which contains the gem and rake files)
     
-    # run tests
-    rake
+4. Install dependencies using bundler
+
+        # run 'gem install bundler' if you don't already have bundler
+        bundle install
+    
+5. Run tests
+
+        bundle exec rake jasmine    # for web server version
+        bundle exec rake            # for default headless CI version. See Note below.
+    
+NOTE: Headless CI requires additional dependencies, namely:
+
+1. a virtual framebuffer such as Xvfb
+
+2. a headless DOM via such as `iceweasel on Ubuntu` (which is headless Firefox), PhantomJS, etc.
+
+Travis CI has these dependencies installed (see .travis.yml file). If you're
+running your own CI server, you'll need to install these.
 
 # Are we running ok on Travis CI?
 
