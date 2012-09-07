@@ -14,7 +14,7 @@ Project includes:
 
 * Travis CI integration via .travis.yml -- see [Travis CI Getting Started](http://about.travis-ci.org/docs/user/getting-started/)
 
-# To see it in action
+# Setup and seeing test runner in action
 
 1. Clone this repository
     
@@ -29,10 +29,16 @@ Project includes:
     
 5. Run tests
 
-        bundle exec rake jasmine    # for web server version
-        bundle exec rake            # for default headless CI version. See Note below.
-    
-NOTE: Headless CI requires additional dependencies, namely:
+        bundle exec rake jasmine    # for a local web server version at http://localhost:8888
+        bundle exec rake            # for default headless CI version. See "How to run headless" below.
+
+## How to run headless (for Continuous Integration)
+
+Headless CI requires additional dependencies.
+
+If running on your own desktop, just install Firefox.
+
+If running on a server:
 
 1. a virtual framebuffer such as Xvfb
 
