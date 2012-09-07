@@ -53,8 +53,24 @@ running your own CI server, you'll need to install these.
 
 # Helpful resources
 
+* New to Jasmine? Take a [Quick Tour](http://pivotal.github.com/jasmine/). See also the ["Matchers" reference](https://github.com/pivotal/jasmine/wiki/Matchers) (Jasmine's equivalent to asserts).
+
 * [Writing a CoffeeScript web application using TDD](http://watirmelon.com/2012/01/23/writing-a-coffeescript-web-application-using-tdd/)
 
 * [Javascript Loves CI](http://www.zendesk.com/blog/javascript-loves-ci)
 
 * [Travis CI Docs](http://about.travis-ci.org/docs/)
+
+# Why Jasmine?
+
+* enjoyable to use and easy to pickup. BDD-styled tests have nice readability.
+
+* well supported, well maintained.
+
+* JavaScript platform agnostic -- works fine with the JS libraries you're already using (jQuery, Closure Library, require.js, etc).
+
+* popular in the industry.  Used by Cordova/PhoneGap for example.
+
+* easy (easiest?) to run headless on server (via Jasmine Ruby Gem and a few dependencies).
+
+* has spies and mocks built-in. There's also the [Sinon.js](http://sinonjs.org) library.
