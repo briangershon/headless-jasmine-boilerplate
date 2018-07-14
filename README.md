@@ -53,7 +53,7 @@ running your own CI server, you'll need to install these.
 
 # Helpful resources
 
-* New to Jasmine? Take a [Quick Tour](http://pivotal.github.com/jasmine/). See also the ["Matchers" reference](https://github.com/pivotal/jasmine/wiki/Matchers) (Jasmine's equivalent to asserts).
+* New to Jasmine? Take a [Quick Tour](https://jasmine.github.io/). See also the ["Matchers" reference](https://jasmine.github.io/api/3.0/matchers.html) (Jasmine's equivalent to asserts).
 
 * [Writing a CoffeeScript web application using TDD](http://watirmelon.com/2012/01/23/writing-a-coffeescript-web-application-using-tdd/)
 
